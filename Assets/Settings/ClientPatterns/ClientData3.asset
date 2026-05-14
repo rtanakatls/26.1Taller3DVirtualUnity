@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1b8d9c901bfc084684995b34819bd14, type: 3}
+  m_Name: ClientData3
+  m_EditorClassIdentifier: Assembly-CSharp::ClientData
+  prefab: {fileID: 8416477709627856241, guid: 11839dd35f611a64ab5617c32c3d732a, type: 3}
+  orderName: Cylinders
