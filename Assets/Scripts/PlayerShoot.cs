@@ -14,12 +14,14 @@ public class PlayerShoot : MonoBehaviour
 
     private void Update()
     {
-        if(shootInput.action.WasPressedThisFrame())
+        if (shootInput.action.WasCompletedThisFrame())
         {
-            Vector3 shootDirection= new Vector3(playerMovement.LastDirection.x,0, playerMovement.LastDirection.y);
-            GameObject bullet = Instantiate(bulletPrefab);
-            bullet.transform.position = transform.position;
-            bullet.GetComponent<BulletMovement>().SetDirection(shootDirection);
+            Vector3 shootDirection = playerMovement.LastDirection;
+            GameObject obj = Instantiate(bulletPrefab);
+            obj.transform.position = transform.position;
+            obj.GetComponent<BulletMovement>().SetDirection(shootDirection);
+
         }
     }
+
 }

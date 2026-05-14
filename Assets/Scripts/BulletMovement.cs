@@ -2,16 +2,15 @@ using UnityEngine;
 
 public class BulletMovement : Movement
 {
-    [SerializeField] private Vector3 direction;
+    private Vector3 direction;
 
-    private void Update()
+    public void SetDirection(Vector3 direction)
     {
-        rb.linearVelocity = direction * speed;
+        this.direction = direction;
     }
 
-    public void SetDirection(Vector3 newDirection)
+    void Update()
     {
-        direction = newDirection.normalized;
+        rb.linearVelocity = speed * direction;
     }
-
 }
